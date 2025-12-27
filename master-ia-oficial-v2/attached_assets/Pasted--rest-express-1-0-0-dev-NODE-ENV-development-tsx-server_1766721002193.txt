@@ -1,0 +1,200 @@
+
+> rest-express@1.0.0 dev
+> NODE_ENV=development tsx server/index.ts
+
+🔌 Socket.IO server connected to WhatsApp service
+3:42:26 AM [express] serving on port 5000
+🔄 Found 0 active sessions in DB
+[DEBUG] GET / {
+  ip: '172.31.80.226',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36'
+}
+{"timestamp":"2025-12-26T03:42:27.346Z","level":"INFO","msg":"GET /","status":200,"duration":"48ms","contentLength":"0"}
+[DEBUG] GET /@vite/client {
+  ip: '172.31.80.226',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36'
+}
+[DEBUG] GET /src/main.tsx?v=MBHh0LoLuges68KXdCEO4 {
+  ip: '172.31.80.226',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36'
+}
+{"timestamp":"2025-12-26T03:42:28.021Z","level":"INFO","msg":"GET /src/main.tsx?v=MBHh0LoLuges68KXdCEO4","status":200,"duration":"2ms","contentLength":"0"}
+{"timestamp":"2025-12-26T03:42:28.040Z","level":"INFO","msg":"GET /@vite/client","status":200,"duration":"255ms","contentLength":"0"}
+[DEBUG] GET /@replit/vite-plugin-dev-banner/banner-script.js {
+  ip: '172.31.80.226',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36'
+}
+{"timestamp":"2025-12-26T03:42:28.045Z","level":"INFO","msg":"GET /@replit/vite-plugin-dev-banner/banner-script.js","status":200,"duration":"1ms","contentLength":"0"}
+[DEBUG] GET /@react-refresh {
+  ip: '172.31.80.226',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36'
+}
+{"timestamp":"2025-12-26T03:42:28.046Z","level":"INFO","msg":"GET /@react-refresh","status":304,"duration":"0ms","contentLength":"0"}
+[DEBUG] GET /src/App.tsx {
+  ip: '172.31.80.226',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36'
+}
+{"timestamp":"2025-12-26T03:42:28.467Z","level":"INFO","msg":"GET /src/App.tsx","status":304,"duration":"1ms","contentLength":"0"}
+[DEBUG] GET /src/index.css {
+  ip: '172.31.80.226',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36'
+}
+{"timestamp":"2025-12-26T03:42:28.468Z","level":"INFO","msg":"GET /src/index.css","status":304,"duration":"1ms","contentLength":"0"}
+[DEBUG] GET /src/lib/queryClient.ts {
+  ip: '172.31.80.226',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36'
+}
+{"timestamp":"2025-12-26T03:42:28.757Z","level":"INFO","msg":"GET /src/lib/queryClient.ts","status":304,"duration":"1ms","contentLength":"0"}
+[DEBUG] GET /src/components/ui/toaster.tsx {
+  ip: '172.31.80.226',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36'
+}
+{"timestamp":"2025-12-26T03:42:28.771Z","level":"INFO","msg":"GET /src/components/ui/toaster.tsx","status":304,"duration":"1ms","contentLength":"0"}
+[DEBUG] GET /src/context/DataContext.tsx {
+  ip: '172.31.80.226',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36'
+}
+{"timestamp":"2025-12-26T03:42:28.781Z","level":"INFO","msg":"GET /src/context/DataContext.tsx","status":304,"duration":"2ms","contentLength":"0"}
+[DEBUG] GET /src/components/layout/Layout.tsx {
+  ip: '172.31.80.226',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36'
+}
+{"timestamp":"2025-12-26T03:42:28.789Z","level":"INFO","msg":"GET /src/components/layout/Layout.tsx","status":304,"duration":"2ms","contentLength":"0"}
+[DEBUG] GET /src/components/ErrorBoundary.tsx {
+  ip: '172.31.80.226',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36'
+}
+{"timestamp":"2025-12-26T03:42:28.794Z","level":"INFO","msg":"GET /src/components/ErrorBoundary.tsx","status":304,"duration":"3ms","contentLength":"0"}
+[DEBUG] GET /src/pages/Dashboard.tsx {
+  ip: '172.31.80.226',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36'
+}
+{"timestamp":"2025-12-26T03:42:29.023Z","level":"INFO","msg":"GET /src/pages/Dashboard.tsx","status":304,"duration":"1ms","contentLength":"0"}
+[DEBUG] GET /src/pages/SheetView.tsx {
+  ip: '172.31.80.226',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36'
+}
+{"timestamp":"2025-12-26T03:42:29.036Z","level":"INFO","msg":"GET /src/pages/SheetView.tsx","status":304,"duration":"1ms","contentLength":"0"}
+[DEBUG] GET /src/pages/SuppliersView.tsx {
+  ip: '172.31.80.226',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36'
+}
+{"timestamp":"2025-12-26T03:42:29.049Z","level":"INFO","msg":"GET /src/pages/SuppliersView.tsx","status":304,"duration":"1ms","contentLength":"0"}
+[DEBUG] GET /src/pages/not-found.tsx {
+  ip: '172.31.80.226',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36'
+}
+{"timestamp":"2025-12-26T03:42:29.175Z","level":"INFO","msg":"GET /src/pages/not-found.tsx","status":304,"duration":"1ms","contentLength":"0"}
+[DEBUG] GET /src/components/layout/Sidebar.tsx {
+  ip: '172.31.80.226',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36'
+}
+{"timestamp":"2025-12-26T03:42:29.194Z","level":"INFO","msg":"GET /src/components/layout/Sidebar.tsx","status":304,"duration":"1ms","contentLength":"0"}
+[DEBUG] GET /@fs/home/runner/workspace/node_modules/vite/dist/client/env.mjs {
+  ip: '172.31.80.226',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36'
+}
+{"timestamp":"2025-12-26T03:42:29.195Z","level":"INFO","msg":"GET /@fs/home/runner/workspace/node_modules/vite/dist/client/env.mjs","status":304,"duration":"1ms","contentLength":"0"}
+[DEBUG] GET /src/components/ui/button.tsx {
+  ip: '172.31.80.226',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36'
+}
+{"timestamp":"2025-12-26T03:42:29.358Z","level":"INFO","msg":"GET /src/components/ui/button.tsx","status":304,"duration":"1ms","contentLength":"0"}
+[DEBUG] GET /src/components/ui/input.tsx {
+  ip: '172.31.80.226',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36'
+}
+{"timestamp":"2025-12-26T03:42:29.362Z","level":"INFO","msg":"GET /src/components/ui/input.tsx","status":304,"duration":"1ms","contentLength":"0"}
+[DEBUG] GET /src/components/ChatInterface.tsx {
+  ip: '172.31.80.226',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36'
+}
+{"timestamp":"2025-12-26T03:42:29.366Z","level":"INFO","msg":"GET /src/components/ChatInterface.tsx","status":304,"duration":"1ms","contentLength":"0"}
+[DEBUG] GET /src/hooks/use-toast.ts {
+  ip: '172.31.80.226',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36'
+}
+{"timestamp":"2025-12-26T03:42:29.447Z","level":"INFO","msg":"GET /src/hooks/use-toast.ts","status":304,"duration":"0ms","contentLength":"0"}
+[DEBUG] GET /src/components/ui/toast.tsx {
+  ip: '172.31.80.226',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36'
+}
+{"timestamp":"2025-12-26T03:42:29.459Z","level":"INFO","msg":"GET /src/components/ui/toast.tsx","status":304,"duration":"1ms","contentLength":"0"}
+[DEBUG] GET /src/components/DataTable.tsx {
+  ip: '172.31.80.226',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36'
+}
+{"timestamp":"2025-12-26T03:42:29.462Z","level":"INFO","msg":"GET /src/components/DataTable.tsx","status":304,"duration":"0ms","contentLength":"0"}
+[DEBUG] GET /src/components/ui/card.tsx {
+  ip: '172.31.80.226',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36'
+}
+{"timestamp":"2025-12-26T03:42:29.617Z","level":"INFO","msg":"GET /src/components/ui/card.tsx","status":304,"duration":"1ms","contentLength":"0"}
+[DEBUG] GET /src/components/ui/table.tsx {
+  ip: '172.31.80.226',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36'
+}
+{"timestamp":"2025-12-26T03:42:29.618Z","level":"INFO","msg":"GET /src/components/ui/table.tsx","status":304,"duration":"0ms","contentLength":"0"}
+[DEBUG] GET /src/lib/utils.ts {
+  ip: '172.31.80.226',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36'
+}
+{"timestamp":"2025-12-26T03:42:29.628Z","level":"INFO","msg":"GET /src/lib/utils.ts","status":304,"duration":"1ms","contentLength":"0"}
+[DEBUG] GET /src/components/ui/sheet.tsx {
+  ip: '172.31.80.226',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36'
+}
+{"timestamp":"2025-12-26T03:42:29.717Z","level":"INFO","msg":"GET /src/components/ui/sheet.tsx","status":304,"duration":"0ms","contentLength":"0"}
+[DEBUG] GET /src/components/ui/scroll-area.tsx {
+  ip: '172.31.80.226',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36'
+}
+{"timestamp":"2025-12-26T03:42:29.724Z","level":"INFO","msg":"GET /src/components/ui/scroll-area.tsx","status":304,"duration":"0ms","contentLength":"0"}
+[DEBUG] GET /src/components/WhatsAppConnect.tsx {
+  ip: '172.31.80.226',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36'
+}
+{"timestamp":"2025-12-26T03:42:29.725Z","level":"INFO","msg":"GET /src/components/WhatsAppConnect.tsx","status":304,"duration":"0ms","contentLength":"0"}
+[DEBUG] GET /src/components/ui/badge.tsx {
+  ip: '172.31.80.226',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36'
+}
+{"timestamp":"2025-12-26T03:42:29.885Z","level":"INFO","msg":"GET /src/components/ui/badge.tsx","status":304,"duration":"1ms","contentLength":"0"}
+[DEBUG] GET /src/components/ui/textarea.tsx {
+  ip: '172.31.80.226',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36'
+}
+{"timestamp":"2025-12-26T03:42:29.888Z","level":"INFO","msg":"GET /src/components/ui/textarea.tsx","status":304,"duration":"0ms","contentLength":"0"}
+[DEBUG] GET /src/components/ui/dialog.tsx {
+  ip: '172.31.80.226',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36'
+}
+{"timestamp":"2025-12-26T03:42:29.894Z","level":"INFO","msg":"GET /src/components/ui/dialog.tsx","status":304,"duration":"0ms","contentLength":"0"}
+[DEBUG] GET /src/components/ui/label.tsx {
+  ip: '172.31.80.226',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36'
+}
+{"timestamp":"2025-12-26T03:42:29.996Z","level":"INFO","msg":"GET /src/components/ui/label.tsx","status":304,"duration":"1ms","contentLength":"0"}
+[DEBUG] GET /src/components/ui/select.tsx {
+  ip: '172.31.80.226',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36'
+}
+{"timestamp":"2025-12-26T03:42:30.005Z","level":"INFO","msg":"GET /src/components/ui/select.tsx","status":304,"duration":"1ms","contentLength":"0"}
+[DEBUG] GET /src/lib/socket.ts {
+  ip: '172.31.80.226',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36'
+}
+{"timestamp":"2025-12-26T03:42:30.021Z","level":"INFO","msg":"GET /src/lib/socket.ts","status":304,"duration":"1ms","contentLength":"0"}
+[DEBUG] GET /api/activities {
+  ip: '172.31.80.226',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36'
+}
+[DEBUG] GET /api/suppliers {
+  ip: '172.31.80.226',
+  userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/141.0.0.0 Safari/537.36'
+}
+{"timestamp":"2025-12-26T03:42:31.318Z","level":"INFO","msg":"GET /api/activities","status":304,"duration":"138ms","contentLength":"0"}
+3:42:31 AM [express] GET /api/activities 304 in 137ms :: [{"id":3900,"local":"Teste Refresh UI","des…
+{"timestamp":"2025-12-26T03:42:31.349Z","level":"INFO","msg":"GET /api/suppliers","status":304,"duration":"159ms","contentLength":"0"}
+3:42:31 AM [express] GET /api/suppliers 304 in 159ms :: [{"id":180,"serviceType":"MARMORARIA","name"…
+^A

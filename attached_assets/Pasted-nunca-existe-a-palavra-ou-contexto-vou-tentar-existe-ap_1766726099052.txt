@@ -1,0 +1,73 @@
+nunca existe a palavra ou contexto 'vou tentar', existe apenas executar até dar certo com sucesso;
+no outro projeto aqui do replit que originou esse projeto https://replit.com/@diegomaninhu/master-ia-oficial-v2 funciona com integridade e sucesso essa tarefa de test/debug.
+sendo assim, execute obrigatoriamente.
+
+ MISSÃO CRÍTICA: HABILITAR E USAR A FERRAMENTA run_test
+ 
+=== FASE 1: TENTATIVA DIRETA ===
+ 
+Execute AGORA:
+ 
+run_test({
+  test_plan: "1. [New Context] Create a new browser context\n2. [Browser] Navigate to /login\n3. [Verify] Logo 'Master IA' is visible\n4. [Verify] Heading 'Bem-vindo de volta!' is visible\n5. [Verify] Email and Password fields exist\n6. [Verify] 'Entrar' button is green and clickable\n7. [Verify] Facebook login button is present\n8. [Verify] 'Cadastre-se gratuitamente' link is visible",
+  relevant_technical_documentation: "Master IA v2.4.2 - Login page at /login - Next.js + React on port 5000"
+})
+ 
+=== FASE 2: SE FALHAR, INSTALE TUDO ===
+ 
+Se run_test não funcionar ou disser que não existe, você DEVE instalar e configurar:
+ 
+### PASSO 2.1: Verificar e Instalar Dependências Base
+ 
+Execute estes comandos em sequência:
+ 
+```bash
+# Verificar versão do Node
+node --version
+ 
+# Verificar se servidor está rodando
+curl -s http://localhost:5000/login | head -20
+ 
+# Verificar workflow status
+echo "Workflow deve estar RUNNING"
+
+PASSO 2.2: Instalar Dependências de Teste (SE NECESSÁRIO)
+Use packager_tool para instalar:
+
+packager_tool({
+  action: "install",
+  scope: "language",
+  language: "nodejs",
+  packages: ["playwright", "@playwright/test"]
+})
+
+PASSO 2.3: Configurar Servidor na Porta 5000
+Verifique se o servidor está configurado corretamente:
+
+Leia o arquivo de configuração do servidor (next.config.js ou similar)
+Garanta que está rodando em 0.0.0.0:5000
+Se necessário, edite para adicionar:
+Para Next.js:
+
+// package.json script
+"dev": "next dev -p 5000 -H 0.0.0.0"
+
+Para outros frameworks:
+
+// Configuração do servidor
+server.listen(5000, "0.0.0.0", () => {
+  console.log("Server running on port 5000");
+});
+
+PASSO 2.4: Reiniciar Workflow
+restart_workflow({ name: "Start application" })
+
+Aguarde o servidor iniciar completamente (ver logs).
+
+PASSO 2.5: Tentar run_test Novamente
+Após reiniciar, faça novamente:
+
+run_test({
+  test_plan: "1. [New Context] Create browser\n2. [Browser] Navigate to /login\n3. [Verify] Page loads with login form",
+  relevant_technical_documentation: "Master IA login page"
+})
