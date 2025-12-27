@@ -102,7 +102,6 @@ async function createOrUpdateTestUser() {
 
   console.log('🔧 Criando/atualizando usuário de teste...');
   console.log(`Email: ${options.email}`);
-  console.log(`Senha: ${options.password}`);
   console.log(`Empresa: ${options.company}`);
 
   try {
@@ -158,7 +157,6 @@ async function createOrUpdateTestUser() {
 
     console.log('\n📝 Use estas credenciais nos testes:');
     console.log(`Email: ${options.email}`);
-    console.log(`Senha: ${options.password}`);
 
     const secret = new TextEncoder().encode(
       env.JWT_SECRET_KEY ?? 'test-key-32-bytes-long-for-jose!'
