@@ -47,26 +47,30 @@ const secrets = [
   },
 ];
 
-// Allowed commands to prevent command injection
-const ALLOWED_COMMANDS = [
-  'gh --version',
-  'gh auth status',
-  'gh repo view --json nameWithOwner',
-] as const;
-
-// Função para executar comandos (only whitelisted commands allowed)
-function runCommand(command: typeof ALLOWED_COMMANDS[number], silent = false): string {
-  if (!ALLOWED_COMMANDS.includes(command)) {
-    throw new Error(`Command not whitelisted: ${command}`);
-  }
+// Specific command functions to avoid dynamic command execution
+function checkGhVersion(): string {
   try {
-    const output = execSync(command, { encoding: 'utf-8', stdio: silent ? 'pipe' : 'inherit' });
+    const output = execSync('gh --version', { encoding: 'utf-8', stdio: 'pipe' });
     return output.trim();
   } catch (error: any) {
-    if (!silent) {
-      console.error(`${colors.red}❌ Erro ao executar comando: ${command}${colors.reset}`);
-      console.error(error.message);
-    }
+    return '';
+  }
+}
+
+function checkGhAuth(): string {
+  try {
+    const output = execSync('gh auth status', { encoding: 'utf-8', stdio: 'pipe' });
+    return output.trim();
+  } catch (error: any) {
+    return '';
+  }
+}
+
+function getRepoInfo(): string {
+  try {
+    const output = execSync('gh repo view --json nameWithOwner', { encoding: 'utf-8', stdio: 'pipe' });
+    return output.trim();
+  } catch (error: any) {
     return '';
   }
 }
@@ -77,7 +81,7 @@ async function main() {
 
   // Verifica se o GitHub CLI está instalado
   console.log(`${colors.blue}📦 Verificando GitHub CLI...${colors.reset}`);
-  const ghVersion = runCommand('gh --version', true);
+  const ghVersion = checkGhVersion();
   
   if (!ghVersion) {
     console.error(`${colors.red}❌ GitHub CLI não está instalado!${colors.reset}`);
@@ -92,7 +96,7 @@ async function main() {
 
   // Verifica autenticação
   console.log(`${colors.blue}🔐 Verificando autenticação do GitHub...${colors.reset}`);
-  const authStatus = runCommand('gh auth status', true);
+  const authStatus = checkGhAuth();
   
   if (!authStatus.includes('Logged in')) {
     console.error(`${colors.red}❌ Não autenticado no GitHub!${colors.reset}`);
@@ -104,7 +108,7 @@ async function main() {
 
   // Obtém informações do repositório
   console.log(`${colors.blue}📂 Detectando repositório...${colors.reset}`);
-  const repoInfo = runCommand('gh repo view --json nameWithOwner', true);
+  const repoInfo = getRepoInfo();
   
   if (!repoInfo) {
     console.error(`${colors.red}❌ Não foi possível detectar o repositório!${colors.reset}`);
