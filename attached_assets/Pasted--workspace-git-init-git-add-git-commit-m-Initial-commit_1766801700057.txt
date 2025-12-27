@@ -1,0 +1,92 @@
+~/workspace$ git init
+git add .
+git commit -m "Initial commit: Master IA Clean Version"
+git branch -M main
+git remote add origin https://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@github.com/ag12x-gth/copia-master-ia-oficial-v2.git
+git push -u origin main --force
+Reinitialized existing Git repository in /home/runner/workspace/.git/
+On branch main
+nothing to commit, working tree clean
+Enumerating objects: 2505, done.
+Counting objects: 100% (2505/2505), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (2236/2236), done.
+Writing objects: 100% (2505/2505), 224.98 MiB | 5.73 MiB/s, done.
+Total 2505 (delta 150), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (150/150), done.
+remote: error: GH013: Repository rule violations found for refs/heads/main.
+remote: 
+remote: - GITHUB PUSH PROTECTION
+remote:   —————————————————————————————————————————
+remote:     Resolve the following violations before pushing again
+remote: 
+remote:     - Push cannot contain secrets
+remote: 
+remote:     
+remote:      (?) Learn how to resolve a blocked push
+remote:      https://docs.github.com/code-security/secret-scanning/working-with-secret-scanning-and-push-protection/working-with-push-protection-from-the-command-line#resolving-a-blocked-push
+remote:     
+remote:     
+remote:       —— GitHub Personal Access Token ——————————————————————
+remote:        locations:
+remote:          - commit: 4ef19b325698166ca35086afbf548973d718b09c
+remote:            path: master-ia-oficial-v2/attached_assets/Pasted--SESSION-SECRET-EndDyuB09CUOrvQoU6ZEOEYxBbKyQN8LqfjOhFd_1766714400161.txt:15
+remote:     
+remote:        (?) To push, remove secret from commit(s) or follow this URL to allow the secret.
+remote:        https://github.com/ag12x-gth/copia-master-ia-oficial-v2/security/secret-scanning/unblock-secret/37PPMzln6EVo8iQfx3fhLhkPHoM
+remote:     
+remote:     
+remote:       —— GitHub Personal Access Token ——————————————————————
+remote:        locations:
+remote:          - commit: 4ef19b325698166ca35086afbf548973d718b09c
+remote:            path: master-ia-oficial-v2/attached_assets/Pasted--SESSION-SECRET-EndDyuB09CUOrvQoU6ZEOEYxBbKyQN8LqfjOhFd_1766714400161.txt:16
+remote:     
+remote:        (?) To push, remove secret from commit(s) or follow this URL to allow the secret.
+remote:        https://github.com/ag12x-gth/copia-master-ia-oficial-v2/security/secret-scanning/unblock-secret/37PPMxn45Uhylvz4vYTBVbYKSVh
+remote:     
+remote:     
+remote:       —— OpenAI API Key ————————————————————————————————————
+remote:        locations:
+remote:          - commit: 4ef19b325698166ca35086afbf548973d718b09c
+remote:            path: master-ia-oficial-v2/attached_assets/Pasted--SESSION-SECRET-EndDyuB09CUOrvQoU6ZEOEYxBbKyQN8LqfjOhFd_1766714400161.txt:21
+remote:     
+remote:        (?) To push, remove secret from commit(s) or follow this URL to allow the secret.
+remote:        https://github.com/ag12x-gth/copia-master-ia-oficial-v2/security/secret-scanning/unblock-secret/37PPN11voBYmrek8uE65rpIjyap
+remote:     
+remote:     
+remote:       —— Twilio Account String Identifier ——————————————————
+remote:        locations:
+remote:          - commit: 4ef19b325698166ca35086afbf548973d718b09c
+remote:            path: master-ia-oficial-v2/attached_assets/Pasted--SESSION-SECRET-EndDyuB09CUOrvQoU6ZEOEYxBbKyQN8LqfjOhFd_1766714400161.txt:28
+remote:          - commit: 4ef19b325698166ca35086afbf548973d718b09c
+remote:            path: master-ia-oficial-v2/attached_assets/call-log-AC801c22459d806d9f2107f255e95ac476_1765264600297_1765264628957.csv:2
+remote:          - commit: 4ef19b325698166ca35086afbf548973d718b09c
+remote:            path: master-ia-oficial-v2/attached_assets/call-log-AC801c22459d806d9f2107f255e95ac476_1765264600297_1765264628957.csv:3
+remote:          - commit: 4ef19b325698166ca35086afbf548973d718b09c
+remote:            path: master-ia-oficial-v2/attached_assets/call-log-AC801c22459d806d9f2107f255e95ac476_1765264600297_1765264628957.csv:4
+remote:          - commit: 4ef19b325698166ca35086afbf548973d718b09c
+remote:            path: master-ia-oficial-v2/attached_assets/call-log-AC801c22459d806d9f2107f255e95ac476_1765264600297_1765264628957.csv:5
+remote:     
+remote:        (?) To push, remove secret from commit(s) or follow this URL to allow the secret.
+remote:        https://github.com/ag12x-gth/copia-master-ia-oficial-v2/security/secret-scanning/unblock-secret/37PPMw9BJwmT3sDpuHtYrhzXdqh
+remote:     
+remote:     
+remote:       —— Twilio API Key ————————————————————————————————————
+remote:        locations:
+remote:          - commit: 4ef19b325698166ca35086afbf548973d718b09c
+remote:            path: master-ia-oficial-v2/attached_assets/Pasted--SESSION-SECRET-EndDyuB09CUOrvQoU6ZEOEYxBbKyQN8LqfjOhFd_1766714400161.txt:31
+remote:     
+remote:        (?) To push, remove secret from commit(s) or follow this URL to allow the secret.
+remote:        https://github.com/ag12x-gth/copia-master-ia-oficial-v2/security/secret-scanning/unblock-secret/37PPMtue21EIRfF7y8ARkNdo7Gz
+remote:     
+remote:     
+remote:     ——[ WARNING ]—————————————————————————————————————————
+remote:      1 more secrets detected. Remove each secret from your commit history to view more detections.
+remote:      https://docs.github.com/code-security/secret-scanning/using-advanced-secret-scanning-and-push-protection-features/excluding-folders-and-files-from-secret-scanning
+remote:     ——————————————————————————————————————————————————————
+remote: 
+remote: 
+To https://github.com/ag12x-gth/copia-master-ia-oficial-v2.git
+ ! [remote rejected] main -> main (push declined due to repository rule violations)
+error: failed to push some refs to 'https://github.com/ag12x-gth/copia-master-ia-oficial-v2.git'
+~/workspace$ 
