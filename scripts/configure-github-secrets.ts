@@ -47,8 +47,18 @@ const secrets = [
   },
 ];
 
-// Função para executar comandos
-function runCommand(command: string, silent = false): string {
+// Allowed commands to prevent command injection
+const ALLOWED_COMMANDS = [
+  'gh --version',
+  'gh auth status',
+  'gh repo view --json nameWithOwner',
+] as const;
+
+// Função para executar comandos (only whitelisted commands allowed)
+function runCommand(command: typeof ALLOWED_COMMANDS[number], silent = false): string {
+  if (!ALLOWED_COMMANDS.includes(command)) {
+    throw new Error(`Command not whitelisted: ${command}`);
+  }
   try {
     const output = execSync(command, { encoding: 'utf-8', stdio: silent ? 'pipe' : 'inherit' });
     return output.trim();
